@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Train Schedule</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"></style> -->
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <!-- Moment.JS  -->
+  <script type="text/javascript" src="scripts/moment.js"></script>
+  <!-- Firebase  -->
+  <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+  <!-- Container -->
+    <div class="jumbotron">
+      <h1 class="text-center"> Train Schedule </h1>
+        <h2 class="text-center"> CHOO CHOO </h2>
+    </div>
+   <!-- Jumbotron  -->
+     <div class="row">
+       <div class="col-lg-12">
+         <div class="panel panel-default">
+           <div class="panel-heading">
+             <h3 class="panel-title"> Train Schedule </h3>
+           </div>
+             <table class="table table-striped">
+               <thead>
+                  <tr>
+                    <th><b> Train Name </b></th>
+                    <th><b> Destination </b></th>
+                    <th><b> Frequency (min) </b></th>
+                    <th><b> Next Arrival </b> </th>
+                    <th><b> Minutes Away </b></th>
+                  </tr>
+                </thead>
+              <tbody class="scheduleData">
+                <tr>
+                  <td>Test Train</td>
+                  <td>San Antonio</td>
+                  <td>120</td>
+                  <td>03:30 PM</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+            <div class="col-lg-12">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title"> Add Train </h3>
+                </div>
+                  <div class="panel-body">
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="train-input"> Train Name </label>
+                          <input class="form-control" id="train-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="train-input"> Destination </label>
+                          <input class="form-control" id="destination-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="train-input"> First Train Time (military time - HH:mm) </label>
+                          <input class="form-control" id="first-input" type="text">
+                      </div>
+                      <div class="form-group">
+                        <label for="train-input"> Frequency (min) </label>
+                          <input class="form-control" id="frequency-input" type="text">
+                      </div>
+                        <button class="btn btn-default" id="add-train" type="submit"> Submit </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+         </div> <!-- Row -->
+    </div> <!-- Container -->
+
+<!-- Javascript  -->
+<script type="text/javascript" src="scripts/schedule.js"></script>
+
+</body>
+</html>

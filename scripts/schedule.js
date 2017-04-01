@@ -33,11 +33,11 @@ firebase.initializeApp(config);
             frequency: frequency,
           });
 
-// Clear HTML values
-  // trainName = $("#train-input").val("");
-  // destination = $("#destination-input").val("");
-  // firstTrain = $("#first-input").val("");
-  // frequency = $("#frequency-input").val("");
+//Clear HTML values
+  trainName = $("#train-input").val("");
+  destination = $("#destination-input").val("");
+  firstTrain = $("#first-input").val("");
+  frequency = $("#frequency-input").val("");
 
   });
 
